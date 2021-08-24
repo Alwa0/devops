@@ -7,4 +7,4 @@ App_python is a web application, that shows current time in Moscow
 2. Install all libraries
 `pip install -r requirements.txt`
 3. Run server
-`python meadow/manage.py runserver` 
+`python app_python/manage.py runserver` 
