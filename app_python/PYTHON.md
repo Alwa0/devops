@@ -1,27 +1,27 @@
 # Python Best Practices
-##Create a Code Repository and Implement Version Control
+### 1. Create a Code Repository and Implement Version Control
 
  
-### 1. Structure of the Python Project:
-####License
+#### **Structure of the Python Project**:
+#### License
 This is in the root directory and is where you should add a license for your project.
-####README
+#### README
 This is in the root directory too and is where you describe your project and what it does.
-####Module Code
+#### Module Code
 This holds your actual code that may be inside a subdirectory or inside root.
 
-####requirements.txt
+#### requirements.txt
 This is not mandatory, but if you use this, you put it in the root directory.
 
 Here, you mention the modules and dependencies of the project - the things it will not run without.
 
-####setup.py
+#### setup.py
 This script in the root lets distutils build and distribute modules needed by the project.
 
-####Documentation
+#### Documentation
 Readable documentation is essential. This is placed in the docs directory.
 
-####Tests
+#### Tests
 Most projects have tests - keep these in the tests directory.
 ### 2. Create Readable Documentation
 So, next in python best practices is readable documentation. You may find it burdensome, but it creates clean code.
