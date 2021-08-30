@@ -1,3 +1,5 @@
+[![CI to Docker Hub](https://github.com/Alwa0/devops/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Alwa0/devops/actions/workflows/main.yml)
+
 # App_python
 App_python is a web application, that shows current time in Moscow
 
