@@ -10,6 +10,16 @@ App_python is a web application, that shows current time in Moscow
 `python app_python/manage.py runserver` 
 4. Go to http://127.0.0.1:8000/
 
+## Docker
+To run the image from dockerhub:
+```
+sudo docker login
+sudo docker run paukovaa/devops_lab2
+```
+
+To run the image locally:
+`sudo docker run --name django_app -d -p 8000:8000 django_app:latest`
+
 ## Tests
 To run tests use:
 `python app_python/manage.py test`
