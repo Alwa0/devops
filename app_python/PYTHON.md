@@ -103,4 +103,5 @@ The only test I created for this application is comparing time returned by API a
 
 #### Sources I used :
 [Python Best Practices – Every Python Developer Must Know](https://data-flair.training/blogs/python-best-practices/)
+
 [Testing Your Code](https://docs.python-guide.org/writing/tests/)
