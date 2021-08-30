@@ -14,8 +14,29 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-  build:
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install requirements
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: |
+          cd app_python
+          python manage.py tests
+
+  run_docker:
+    needs: run_tests
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
