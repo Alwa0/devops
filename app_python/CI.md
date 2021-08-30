@@ -26,4 +26,7 @@ It should be easy to find out whether the build breaks and, if so, who made the 
 
 ### 10. Automate deployment
 
+#### Sources I used :
+[Continuous Integration Best Practices: Vision and Reality](https://www.cloudbees.com/continuous-delivery/continuous-integration-best-practices)
+
  
