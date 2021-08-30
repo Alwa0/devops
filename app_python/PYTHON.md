@@ -88,7 +88,7 @@ This has the advantages of data hiding and modularity. It allows reusability, mo
 # Testing 
 The only test I created for this application is comparing time returned by API and current Moscow time and checking that returning status code is 200(OK)
 
-#Testing best practices 
+# Testing best practices 
 - A testing unit should focus on one tiny bit of functionality and prove it correct
 - Each test unit must be fully independent
 - Try hard to make tests that run fast
