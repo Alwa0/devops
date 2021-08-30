@@ -89,7 +89,18 @@ This has the advantages of data hiding and modularity. It allows reusability, mo
 The only test I created for this application is comparing time returned by API and current Moscow time and checking that returning status code is 200(OK)
 
 #Testing best practices 
-
+- A testing unit should focus on one tiny bit of functionality and prove it correct
+- Each test unit must be fully independent
+- Try hard to make tests that run fast
+- Learn your tools and learn how to run a single test or a test case
+- Always run the full test suite before a coding session, and run it again after
+- It is a good idea to implement a hook that runs all tests before pushing code to a shared repository
+- f you are in the middle of a development session and have to interrupt your work, it is a good idea to write a broken unit test about what you want to develop next
+- The first step when you are debugging your code is to write a new test pinpointing the bug
+- Use long and descriptive names for testing functions
+- When something goes wrong or has to be changed, and if your code has a good set of tests, you or other maintainers will rely largely on the testing suite to fix the problem or modify a given behavior
+- An introduction to new developers. When someone will have to work on the code base, running and reading the related testing code is often the best thing that they can do to start
 
 #### Sources I used :
 [Python Best Practices – Every Python Developer Must Know](https://data-flair.training/blogs/python-best-practices/)
+[Testing Your Code](https://docs.python-guide.org/writing/tests/)
