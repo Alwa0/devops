@@ -33,7 +33,7 @@ jobs:
       - name: Run unit tests
         run: |
           cd app_python
-          python manage.py tests
+          python manage.py test
 
   run_docker:
     needs: run_tests
