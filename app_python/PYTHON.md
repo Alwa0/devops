@@ -85,7 +85,10 @@ This has the advantages of data hiding and modularity. It allows reusability, mo
 - Do not turn off error reporting during development- turn it off after it.
 - Don’t alter sys.path, use distutils for that.
 
+# Testing 
+The only test I created for this application is comparing time returned by API and current Moscow time and checking that returning status code is 200(OK)
 
+#Testing best practices 
 
 
 #### Sources I used :

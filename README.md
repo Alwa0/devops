@@ -9,3 +9,7 @@ App_python is a web application, that shows current time in Moscow
 3. Run server
 `python app_python/manage.py runserver` 
 4. Go to http://127.0.0.1:8000/
+
+## Tests
+To run tests use:
+`python app_python/manage.py test`
