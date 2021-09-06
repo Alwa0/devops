@@ -1,8 +1,5 @@
 ---
-- name: Docker
+- name: Deploy app in Docker
   hosts: all
-  tasks:
-    - name: Install Docker
-      include_role:
-        name: docker
+  roles: [docker, app]
   become: yes
