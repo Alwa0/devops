@@ -1,0 +1,45 @@
+version: "3"
+
+networks:
+  loki:
+
+services:
+  app:
+    image: paukovaa/devops_lab2
+    container_name: monitoring-app
+    ports:
+      - "8000:8000"
+    networks:
+      - loki
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}"
+  loki:
+    image: grafana/loki:2.3.0
+    container_name: monitoring-loki
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./loki.yml:/etc/loki/loki.yml
+    command: -config.file=/etc/loki/loki.yml
+    networks:
+      - loki
+
+  promtail:
+    image: grafana/promtail:2.3.0
+    container_name: monitoring-promtail
+    volumes:
+      - /var/lib/docker/containers:/var/lib/docker/containers
+      - ./promtail.yml:/etc/promtail/promtail.yml
+    command: -config.file=/etc/promtail/promtail.yml
+    networks:
+      - loki
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: monitoring-grafana
+    ports:
+      - "3000:3000"
+    networks:
+      - loki
