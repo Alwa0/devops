@@ -33,8 +33,10 @@ services:
   promtail:
     image: grafana/promtail:2.3.0
     container_name: monitoring-promtail
+    ports:
+      - "9080:9080"
     volumes:
-      - /var/lib/docker/containers:/var/lib/docker/containers
+      - /var/snap/docker/common/var-lib-docker/containers:/var/lib/docker/containers
       - ./promtail.yml:/etc/promtail/promtail.yml
     command: -config.file=/etc/promtail/promtail.yml
     networks:
