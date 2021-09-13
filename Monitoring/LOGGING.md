@@ -61,6 +61,19 @@ Dashboard management maturity refers to how well-designed and efficient your das
 2. Medium - methodical dashboards. At this stage, you are starting to manage your dashboard use with methodical dashboards. You might have laid out a strategy, but there are some things you could improve.
 3. High - optimized use. At this stage, you have optimized your dashboard management use with a consistent and thoughtful strategy. It requires maintenance, but the results are worth it.
 
+# Monitoring: metrics 
+## Screenshots of my success
+Targets in Prometheus:
+
+![image4](images/image4.jpg)
+
+Dashboards in Grafana for Loki:
+
+![image5](images/image5.jpg)
+
+Dashboards in Grafana for Prometheus:
+
+![image6](images/image6.jpg)
 
 ### Sources I used:
 - [Loki label best practices](https://grafana.com/docs/loki/latest/best-practices/)
