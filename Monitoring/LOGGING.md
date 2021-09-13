@@ -1,11 +1,16 @@
 # Logging
 
-##Screenshots of my success
+## Screenshots of my success
 Logs of my app in Grafana:
+
 ![image1](images/image1.jpg)
+
 Available lables in Grafna:
+
 ![image2](images/image2.jpg)
+
 Targets in Promtail:
+
 ![image3](images/image3.jpg)
 
 ## Best practices:
