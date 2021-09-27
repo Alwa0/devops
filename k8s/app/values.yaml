@@ -11,6 +11,10 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: latest
 
+configmap:
+  config:
+    name: my-configmap
+
 secrets:
   config:
     name: app

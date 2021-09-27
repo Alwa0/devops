@@ -53,6 +53,14 @@ spec:
                 secretKeyRef:
                   name: { { .Values.secrets.config.name } }
                   key: username
+          volumeMounts:
+            - name: configmap-volume
+              mountPath: /app/config.json
+              subPath: config.json
+      volumes:
+        - name: configmap-volume
+          configMap:
+            name: {{ .Values.configmap.config.name }}
 
       {{- with .Values.nodeSelector }}
       nodeSelector:
